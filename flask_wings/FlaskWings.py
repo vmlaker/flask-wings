@@ -1,3 +1,5 @@
+""" Boilerplate for a Flask extension class. """
+
 import os 
 
 import jinja2
@@ -8,6 +10,9 @@ class FlaskWings:
     """ Boilerplate Flask extension that overrides templates and views."""
     
     def __init__(self, app):
+        """ Add the default templates directory and default views
+        to the parent application.
+        """
         templates_dir = os.path.join(
             os.path.dirname(os.path.realpath(__file__)), 'templates')
         my_loader = jinja2.ChoiceLoader([

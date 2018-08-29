@@ -1,11 +1,13 @@
+""" Boilerplate views for a Flask extension. """
+
 import random
 import string
 
 from flask import Blueprint, render_template
 
 
-# Prevent naming collision between this blueprint and that of
-# the client, by using a randomly generated name.
+# Use a randomly generated name in order to prevent name collision
+# between this blueprint and that of the parent blueprint(s).
 name = ''.join(random.choice(string.ascii_uppercase + string.digits) for _ in range(32))
 name = 'FlaskWings_' + name
 views = Blueprint(name, __name__)
