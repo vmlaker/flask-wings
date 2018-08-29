@@ -1,4 +1,5 @@
 from setuptools import setup
+
 exec(open('./flask_wings/version.py').read())
 
 setup(
@@ -10,7 +11,7 @@ setup(
     author_email='vel.i.mir.mlaker@gmail.com',
     description='Boilerplate Flask extension.',
     packages=['flask_wings'],
-    zip_safe=False,
+    package_data={'flask_wings': ['templates/*']},
     include_package_data=True,
     platforms='any',
     install_requires=[
