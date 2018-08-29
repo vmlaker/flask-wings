@@ -1,9 +1,9 @@
 from setuptools import setup
-
+exec(open('./flask_wings/version.py').read())
 
 setup(
     name='Flask-Wings',
-    version='0.1',
+    version=__version__,
     url='http://github.com/vmlaker/flask-wings',
     license='MIT',
     author='Velimir Mlaker',

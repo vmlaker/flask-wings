@@ -1,7 +1,7 @@
-venv: requirements.txt
+venv:
 	test -d venv || virtualenv venv -p python3
-	venv/bin/pip install -r requirements.txt
-	ln -sf venv/bin/python
-
+	ln -sf ./venv/bin/python
+	./venv/bin/pip install .
+	./python -c "from flask_wings import __version__; print('Installed Python-Wings version {}'.format(__version__))"
 clean:
-	rm -rf __pycache__ python venv
+	rm -rf __pycache__ build dist python venv
