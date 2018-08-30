@@ -12,3 +12,7 @@ wings = FlaskWings(app)
 
 if __name__ == '__main__':
     app.run(debug=True)
+
+def test_app():
+    """ A minimalistic pytest test. """
+    assert(app)
