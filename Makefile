@@ -8,8 +8,13 @@ test:
 	./python setup.py test
 
 clean:
-	rm -rf __pycache__
-	rm -rf .eggs .pytest_cache
-	rm -rf build dist python venv
-	rm -rf tests/__pycache__
-	rm -rf *.egg-info
+	rm -rf \
+	.eggs/ \
+	.pytest_cache/ \
+	Flask_Wings.egg-info/ \
+	build/ \
+	dist/ \
+	flask_wings/__pycache__/ \
+	python \
+	tests/__pycache__/ \
+	venv/
