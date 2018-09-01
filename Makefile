@@ -7,6 +7,14 @@ venv:
 test: venv
 	./python setup.py test
 
+pypi_test: test
+	./venv/bin/pip install twine
+	./venv/bin/twine upload --repository-url https://test.pypi.org/legacy/ dist/*
+
+pypi: test
+	./venv/bin/pip install twine
+	./venv/bin/twine upload dist/*
+
 clean:
 	rm -rf \
 	.eggs/ \
