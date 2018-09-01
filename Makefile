@@ -4,7 +4,7 @@ venv:
 	./python setup.py install
 	./python -c "from flask_wings import __version__; print('Installed Python-Wings version {}'.format(__version__))"
 
-test:
+test: venv
 	./python setup.py test
 
 clean:
