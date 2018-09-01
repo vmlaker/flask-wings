@@ -14,6 +14,7 @@ setup(
     package_data={'flask_wings': ['templates/*']},
     include_package_data=True,
     platforms='any',
+    zip_safe=False,
     setup_requires=[
         'pytest-runner==4.2',
     ],
