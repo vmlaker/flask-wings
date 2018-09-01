@@ -2,17 +2,18 @@
 
 Flask-Wings is a boilerplate for writing Flask extensions.
 
-It itself is a tiny Flask extension that just adds some views and templates to the parent Flask application. An example of how to use it is in file ```tests/app.py```.
+Itself it is a tiny Flask extension that just adds some views and templates to the parent app. An example of how to use it is in file ```tests/app.py```.
 
-Use Flask-Wings as a starting point for creating your own Flask extension Python packages.
+You can use Flask-Wings as a starting point for creating your own Flask extensions as distributable Python packages.
 
-In addition to the boilerplate code, it includes some extras you can adopt to make your Flask extension agree with standard practices:
+The minimalistic source code comes with a few extras you can use to make your extension agree with [standard practices](http://flask.pocoo.org/docs/1.0/extensiondev):
 
-* setuptools configuration file
-* tests directory
-* a makefile
+* tests directory with a minimal set of tests
+* setuptools configuration
+* top level makefile
+* etc.
 
 
 ## Developers
 
-Take a look at the Makefile.
+Check out the makefile to see a micro develpment cycle.
