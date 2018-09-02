@@ -1,7 +1,11 @@
+import os
 from setuptools import setup
 
 exec(open('./flask_wings/version.py').read())
 
+with open('README.md') as f:
+    long_description = f.read()
+    
 setup(
     name='Flask-Wings',
     version=__version__,
@@ -10,6 +14,7 @@ setup(
     author='Velimir Mlaker',
     author_email='vel.i.mir.mlaker@gmail.com',
     description='Boilerplate Flask extension.',
+    long_description=long_description,
     packages=['flask_wings'],
     package_data={'flask_wings': ['templates/*']},
     include_package_data=True,
@@ -29,7 +34,8 @@ setup(
         'Intended Audience :: Developers',
         'License :: OSI Approved :: MIT License',
         'Operating System :: OS Independent',
-        'Programming Language :: Python',
+        'Programming Language :: Python :: 2.7',
+        'Programming Language :: Python :: 3',
         'Topic :: Internet :: WWW/HTTP :: Dynamic Content',
         'Framework :: Flask',
     ]
