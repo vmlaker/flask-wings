@@ -3,7 +3,7 @@ from setuptools import setup
 
 exec(open('./flask_wings/version.py').read())
 
-with open('README.md') as f:
+with open('README.rst') as f:
     long_description = f.read()
     
 setup(
