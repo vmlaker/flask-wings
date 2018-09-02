@@ -1,4 +1,5 @@
-flask-wings
+===========
+Flask-Wings
 ===========
 
 Flask-Wings is a boilerplate for writing Flask extensions.
