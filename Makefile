@@ -7,9 +7,10 @@ venv:
 test: venv
 	./python setup.py test
 
-pypi_test: test
+testpypi: test
 	./venv/bin/pip install twine
-	./venv/bin/twine upload --repository-url https://test.pypi.org/legacy/ dist/*
+	#./venv/bin/twine upload --repository-url https://test.pypi.org/legacy/ dist/*
+	./venv/bin/twine upload --repository testpypi dist/*
 
 pypi: test
 	./venv/bin/pip install twine
