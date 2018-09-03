@@ -2,6 +2,12 @@
 Flask-Wings
 ===========
 
+.. image:: https://img.shields.io/pypi/v/flask-wings.svg
+    :target: https://pypi.python.org/pypi/flask-wings
+
+.. image:: https://img.shields.io/github/license/vmlaker/flask-wings.svg
+    :target: https://github.com/vmlaker/flask-wings/blob/master/LICENSE
+
 Flask-Wings is a boilerplate for writing Flask extensions.
 
 Itself it is a tiny Flask extension that just adds some views and templates
