@@ -8,6 +8,9 @@ Flask-Wings
 .. image:: https://img.shields.io/travis/vmlaker/flask-wings.svg
    :target: https://travis-ci.org/vmlaker/flask-wings
 
+.. image:: https://img.shields.io/coveralls/vmlaker/flask-wings.svg
+   :target: https://coveralls.io/r/vmlaker/flask-wings
+
 .. image:: https://img.shields.io/github/license/vmlaker/flask-wings.svg
     :target: https://github.com/vmlaker/flask-wings/blob/master/LICENSE
 
