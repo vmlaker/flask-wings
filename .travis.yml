@@ -14,7 +14,7 @@ python:
   - "3.7-dev"
 
 install:
-  - pip install coveralls --use-mirrors
+  - pip install coveralls
 
 script:
   - make test
