@@ -1,5 +1,6 @@
-venv:
+venv: requirements.txt
 	test -d venv || virtualenv venv -p python3
+	./venv/bin/pip install -r requirements.txt
 	ln -sf ./venv/bin/python
 
 test: venv
@@ -7,16 +8,18 @@ test: venv
 	./python -c "from flask_wings import __version__; print('Installed Python-Wings version {}'.format(__version__))"
 	./python setup.py test
 
+coverage: test
+	./venv/bin/coverage run --source tests tests/test_*.py
+	./venv/bin/coverage report
+
 dist: clean venv
 	./python setup.py sdist bdist_wheel
 
 testpypi: dist
-	./venv/bin/pip install twine
 	#./venv/bin/twine upload --repository-url https://test.pypi.org/legacy/ dist/*
 	./venv/bin/twine upload --repository testpypi dist/*
 
 pypi: dist
-	./venv/bin/pip install twine
 	./venv/bin/twine upload dist/*
 
 clean:

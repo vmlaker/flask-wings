@@ -1,11 +1,10 @@
-import os
 from setuptools import setup
 
 exec(open('./flask_wings/version.py').read())
 
 with open('README.rst') as f:
     long_description = f.read()
-    
+
 setup(
     name='Flask-Wings',
     version=__version__,
@@ -24,7 +23,12 @@ setup(
         'pytest-runner==4.2',
     ],
     tests_require=[
-        'pytest==3.7.4',
+        'coverage==4.5.1',
+        'pydocstyle>=1.0.0',
+        'pytest-cache>=1.0',
+        'pytest-cov>=2.6.0',
+        'pytest-pep8>=1.0.6',
+        'pytest>=3.7.4',
     ],
     install_requires=[
         'Flask==1.0.2'
