@@ -24,6 +24,7 @@ pypi: dist
 
 clean:
 	rm -rf \
+	.coverage \
 	.eggs/ \
 	.pytest_cache/ \
 	Flask_Wings.egg-info/ \
