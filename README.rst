@@ -27,6 +27,7 @@ to make your extension agree with
 `standard practices <http://flask.pocoo.org/docs/1.0/extensiondev>`_:
 
 * tests directory with a minimal set of tests
+* `Sphinx <http://www.sphinx-doc.org>`_ documentation
 * integration with
   `Travis CI <https://travis-ci.org/vmlaker/flask-wings>`_ and
   `Coveralls <https://coveralls.io/github/vmlaker/flask-wings>`_
