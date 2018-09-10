@@ -1,0 +1,7 @@
+flask_wings
+===========
+
+.. toctree::
+   :maxdepth: 4
+
+   flask_wings

@@ -1,0 +1,38 @@
+flask\_wings package
+====================
+
+Submodules
+----------
+
+flask\_wings.FlaskWings module
+------------------------------
+
+.. automodule:: flask_wings.FlaskWings
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+flask\_wings.version module
+---------------------------
+
+.. automodule:: flask_wings.version
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+flask\_wings.views module
+-------------------------
+
+.. automodule:: flask_wings.views
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: flask_wings
+    :members:
+    :undoc-members:
+    :show-inheritance:
