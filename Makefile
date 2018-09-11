@@ -79,6 +79,7 @@ clean:
 	dist/ \
 	docs/ \
 	flask_wings/__pycache__/ \
+	html/ \
 	python \
 	tests/__pycache__/ \
 	venv/
