@@ -14,20 +14,21 @@ Flask-Wings
 .. image:: https://img.shields.io/github/license/vmlaker/flask-wings.svg
     :target: https://github.com/vmlaker/flask-wings/blob/master/LICENSE
 
-Flask-Wings is a boilerplate for writing Flask extensions.
+Flask-Wings is a boilerplate for writing
+`Flask <http://flask.pocoo.org>`_ extensions.
 
 Itself it is a tiny Flask extension that just adds some views and templates
 to the parent app. Take a look at ``tests/app.py`` for a usage example.
 
-Use use Flask-Wings as a starting point for creating your own
+Use Flask-Wings as a starting point for creating your own
 Flask extensions as fully-fledged, distributable Python packages.
 
-The minimalistic source code comes with a few extras you can use
+Minimalistic source code comes with a few extras you can use
 to make your extension agree with
 `standard practices <http://flask.pocoo.org/docs/1.0/extensiondev>`_:
 
 * tests directory with a minimal set of tests
-* `Sphinx <http://www.sphinx-doc.org>`_ documentation
+* `docs build <https://vmlaker.github.io/flask-wings>`_ using Sphinx
 * integration with
   `Travis CI <https://travis-ci.org/vmlaker/flask-wings>`_ and
   `Coveralls <https://coveralls.io/github/vmlaker/flask-wings>`_
