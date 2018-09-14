@@ -24,7 +24,7 @@ testpypi: dist
 pypi: dist
 	./venv/bin/twine upload dist/*
 
-docs: venv
+init-docs: venv
 	./python setup.py install
 	./venv/bin/sphinx-quickstart docs \
 	  --quiet \
@@ -34,11 +34,12 @@ docs: venv
 	  --dot=_ \
 	  --ext-autodoc \
 	  --ext-viewcode \
-	  --extensions=pallets_sphinx_themes \
 	  -d html_theme='flask' \
-	  --makefile \
-	  --no-batchfile
+	  --no-batchfile \
+	  --no-makefile
+	cp flask-wings.png docs/_static/
 	sed -i s:'html_theme = ':"html_theme = 'flask' # ":g docs/conf.py
+	sed -i s%'# html_theme_options = {}'%"html_theme_options = { 'index_logo': 'flask-wings.png' }"%g docs/conf.py
 	./venv/bin/sphinx-apidoc -o docs flask_wings
 	./venv/bin/sphinx-build -b html docs/ docs/_build/html/
 
