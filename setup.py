@@ -31,7 +31,7 @@ setup(
         'pytest>=3.7.4',
     ],
     install_requires=[
-        'Flask==1.0.2'
+        'Flask==2.3.2'
     ],
     classifiers=[
         'Framework :: Flask',
